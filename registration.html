@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Coin</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><img src="img/logo.png" id="logo" alt="logo" /></a>
+            <ul class="menu">
+                <li class="item active"><a href="index.html" class="test">Tournament</a></li>
+                <li class="item"><a href="aboutus.html">About us</a></li>
+                <li class="item"><a href="store.html">Store</a></li>
+                <li class="item"><a href="faq.html">FAQ</a></li>
+                <li class="item"><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="toggle" onclick="toggleMenu()">
+                <a href="#">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Contact</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a semper eros. Sed vestibulum
+                malesuada
+                risus a dapibus. Sed ut pharetra arcu. Proin cursus ligula enim, et ornare ligula placerat non.</p>
+            <form>
+                <div id="registration-form">
+                    <div id="registration-form-column1">
+                        <div class="registration-flex">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" />
+                        </div>
+                        <div class="registration-flex">
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" name="address" />
+                        </div>
+                        <div class="registration-flex">
+                            <label for="city">City:</label>
+                            <input type="text" id="city" name="city" />
+                        </div>
+                        <div class="registration-flex">
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="age" min="0" max="24"/>
+                        </div>
+                        <div class="registration-flex">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" />
+                        </div>
+                        <div class="registration-flex">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone" />
+                        </div>
+                    </div>
+                    <div id="registration-form-column2">
+                        <div class="registration-flex">
+                            <label for="playerlevel">Player Level:</label>
+                            <select id="playerlevel">
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="registration-flex">
+                            <label for="favgame">Favorite Game:</label>
+                            <input type="text" id="favgame" name="favgame" />
+                        </div>
+                        <div class="registration-flex">
+                            <label for="usernamesteam">Username Steam:</label>
+                            <input type="text" id="usernamesteam" name="usernamesteam" />
+                        </div>
+                        <div class="registration-flex">
+                            <label for="remarks">Optional Remarks:</label>
+                            <textarea id="remarks" name="remarks" rows="10"></textarea>
+                        </div>
+                        <div class="registration-flex" id="flex-agree">
+                            <input type="checkbox" name="agree" id="agree">
+                            <label for="agree">I agree with the terms of service.</label>
+                        </div>
+                        <div class="registration-flex">
+                            <input type="submit" value="Send">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div id="overlay">
+                <div id="ageCheck">
+                    <h1>Verify your age</h1>
+                    <p>This tournament is only intended for people under 25 years old.<br />Please enter your birthdate.
+                    </p>
+                    <div id="birthdate">
+                        <select id="month">
+                            <option value="january">January</option>
+                            <option value="february">February</option>
+                            <option value="march">March</option>
+                            <option value="april">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="september">September</option>
+                            <option value="october">October</option>
+                            <option value="november">November</option>
+                            <option value="december">December</option>
+                        </select>
+                        <input id="day" type="number" min="1" max="31" placeholder="Day" />
+                        <input id="year" type="number" min="1900" max="2021" placeholder="Year" />
+                    </div>
+                    <button onclick="checkAge()">Verify</button>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>Copyright <a href="index.html">Insert Coin</a> &#169;2021</p>
+    </footer>
+</body>
+
+</html>
